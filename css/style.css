@@ -1,0 +1,60 @@
+body{
+    margin: auto;
+}
+.logo{
+    position: absolute;
+    width: 38%;
+    height: 70px;
+    line-height: 70px;
+}
+
+.nav{
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+}
+.menu{
+    margin: 0px 30 0px 0px;
+}
+.menu a{
+    clear: right;
+    text-decoration: none;
+    color: gray;
+    margin: 0 10px;
+    line-height: 70px;
+}
+span{
+    color: #54d17A; 
+}
+label{
+    margin: 0px 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 30px;
+    float: right;
+}
+#toggle{
+    display: none;
+}
+@media screen and (max-width:875px){
+   
+    label{
+        display: block; 
+        cursor: pointer;
+    }
+    .menu{
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a{
+        display: block;
+        border-bottom: 1px solid  #EAEAEB;
+        margin: 0;
+
+    }
+    #toggle:checked + .menu{
+        display: block;
+    }
+}
